@@ -6,12 +6,15 @@ derecha a izquierda
 1 par
 2 impar
 
-
 length
 i=(a[].length-1) ??
 
+Scanner
 int evenNumbers=0;
 int oddNumbers=0;
+String scan=scanner.NextLine();
+String to a[]
+
 
 if i%2==0{
 add to evenNumbers
