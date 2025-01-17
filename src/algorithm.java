@@ -8,6 +8,7 @@ class algorithm{
         Scanner userID=new Scanner(System.in);
         System.out.println("Enter ID: ");
         String ID=userID.nextLine();
+        userID.close();
         
         char charArrayID[]=ID.toCharArray();
         int intArrayID[]=new int[charArrayID.length];
@@ -32,7 +33,8 @@ class algorithm{
         newOdds=oddNumbers+1;
         newEvens=evenNumbers+1;
         newAll=allNumbers+1;
-
+        
+        System.out.println("Results:");
         int questionOne=theGenerator(newEvens);
         int questionTwo=theGenerator(newOdds);
         int questionThree=theGenerator(newAll);
@@ -56,12 +58,11 @@ class algorithm{
             if (questionThree==questionOne){
                 questionThree++;
             }
+        } 
 
-        
         System.out.println("Question One:"+questionOne);
         System.out.println("Question Two:"+questionTwo);
         System.out.println("Question Three:"+questionThree);
-        } 
     }
 
         
