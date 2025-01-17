@@ -25,11 +25,6 @@ class algorithm{
                 evenNumbers=evenNumbers+intArrayID[j];
             }    
         }
-//        System.out.print("your ID: ");
-//        for(int n=0;n>=intArrayID.length;n++){
-//            System.out.print(intArrayID[n]);
-//        }
-//        System.out.println();
 
         System.out.println("Odd Number Sum="+oddNumbers);
         System.out.println("Even Number Sum="+evenNumbers);
@@ -38,10 +33,17 @@ class algorithm{
         newEvens=evenNumbers+1;
         newAll=allnumbers+1;
 
-        if(newOdds>6){
-            int division=newOdds/6;
-            newOdds=newOdds-6*division;
-            System.out.println("dude was bigger than 6, is now"+newOdds);
-        }
+        int questionOne=theGenerator(oddNumbers);
+        System.out.println(questionOne);
     }
+
+        
+        static int theGenerator(int theNumber) {
+            if(theNumber>6){
+                int division=theNumber/6;
+                theNumber=theNumber-6*division;
+                //System.out.println("dude was bigger than 6, is now "+theNumber);
+                return theNumber;
+            }
+        }
 } 
