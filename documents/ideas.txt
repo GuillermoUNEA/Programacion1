@@ -15,6 +15,11 @@ int oddNumbers=0;
 String scan=scanner.NextLine();
 String to a[]
 
+character array
+int array lentght initialization to the length of the char array
+
+for i i<lenth i++{ int array[i] = char array[i] transformed to numbers idk
+
 
 if i%2==0{
 add to evenNumbers

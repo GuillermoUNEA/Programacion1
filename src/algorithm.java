@@ -2,14 +2,20 @@ class algorithm{
     public static void main(String[] args) {
         int evenNumbers=0;
         int oddNumbers=0;
+        int allnumbers=0;
         //Scanner userID=new Scanner(System.in);
         //String ID=userID.nextLine();
         String ID="1234";
-        char arrayID[]=ID.toCharArray();
-        
-        for(int i=0;i<arrayID.length;){
-            System.out.println(arrayID[i]);
+        char charArrayID[]=ID.toCharArray();
+        int intArrayID[]=new int[charArrayID.length];
+
+        for(int i=0;i<charArrayID.length;){
+            // System.out.println(arrayID[i]);
+            intArrayID[i]=Character.getNumericValue(charArrayID[i]);
+            allnumbers=allnumbers+intArrayID[i];
+            System.out.println(allnumbers);
             i=i+1;
+
         }
 
     }
