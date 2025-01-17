@@ -3,8 +3,8 @@
 derecha a izquierda
 
 4321
-1 par
-2 impar
+1 impar
+2 par
 
 length
 i=(a[].length-1) ??

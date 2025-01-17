@@ -10,11 +10,13 @@ class algorithm{
         int intArrayID[]=new int[charArrayID.length];
 
         for(int i=0;i<charArrayID.length;){
-            // System.out.println(arrayID[i]);
             intArrayID[i]=Character.getNumericValue(charArrayID[i]);
-            allnumbers=allnumbers+intArrayID[i];
-            System.out.println(allnumbers);
             i=i+1;
+        }
+        for(int j=(intArrayID.length-1);j>=0;j--){
+            allnumbers=allnumbers+intArrayID[j];
+            System.out.println(j%2);
+            // System.out.println(allnumbers);
 
         }
 
